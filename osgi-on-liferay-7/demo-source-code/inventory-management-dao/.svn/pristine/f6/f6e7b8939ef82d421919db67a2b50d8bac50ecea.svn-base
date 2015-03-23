@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.inventory.dao</groupId>
+  <artifactId>com.inventory.dao</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+      <packaging>bundle</packaging>
+      <name>Inventory Management DAO</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+     <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.5.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        
+                        <Export-Package>com.inventory.dao*</Export-Package>
+                        <Import-Package>org.osgi.framework;version="[1.7,2)",*</Import-Package>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
+                </configuration>
+            </plugin>
+
+    </plugins>
+  </build>
+  
+   <!-- BUNDLE PACKAGING -->
+
+      <dependencies>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+    </dependencies>
+        <repositories>
+        <repository>
+            <id>liferay</id>
+            <url>http://cdn.repository.liferay.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    
+</project>

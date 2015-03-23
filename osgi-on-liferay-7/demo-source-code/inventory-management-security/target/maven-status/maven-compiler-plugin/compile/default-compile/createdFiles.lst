@@ -1,0 +1,5 @@
+com\inventory\security\api\AuthMessages.class
+com\inventory\security\impl\ProductAuthentication.class
+com\inventory\security\base\Authentication.class
+com\inventory\security\api\AuthType.class
+com\inventory\security\api\AuthResponse.class

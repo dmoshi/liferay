@@ -1,0 +1,4 @@
+com\inventory\service\impl\ProductServiceImpl.class
+com\inventory\service\api\ResponseMessages.class
+com\inventory\service\base\ProductService.class
+com\inventory\service\api\ServiceResponse.class

@@ -1,0 +1,4 @@
+com\inventory\dao\impl\ProductDAOImpl.class
+com\inventory\dao\sample\data\DAODataUtil.class
+com\inventory\dao\base\ProductDAO.class
+com\inventory\dao\model\Product.class
